@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_above="@id/bottomNavigation"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/grayBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/groupCloseButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFF0000"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/addGroupFragment"
+        />
+
+    <fragment
+        android:visibility="gone"
+        android:name="com.example.studentsdatabase.AddGroupInfoFragment"
+        android:id="@+id/addGroupFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_add_group_info"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/groupsAddButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/bottomNavigation"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

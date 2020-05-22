@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentInfoFragment"
+    android:id="@+id/addStudentFragment"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="20dp"
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/hideStudentKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:hint="Введите имя"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фамилия"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/addSurname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:hint="Введите фамилию"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отчество"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/addMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:hint="Введите отчество"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Группа"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/addGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:hint="Введите группу"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/addStudentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="@string/add_student"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

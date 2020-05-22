@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StudentsDatabase</string>
+    <string name="students_label">Список студентов</string>
+    <string name="groups_label">Список групп</string>
+    <string name="add_student">Добавить студента</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_group">Добавить группу</string>
+</resources>
